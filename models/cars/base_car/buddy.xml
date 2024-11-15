@@ -7,7 +7,7 @@
   </asset>
   <default>
       <default class="buddy_wheel">
-      <geom fitscale="1.2" type="ellipsoid" friction="2 0.005 0.0001" contype="1" conaffinity="0" mesh="buddy_mushr_wheel" mass="0.498952"/>
+      <geom fitscale="1.2" type="ellipsoid" friction="0.5 0.0005 0.0001" contype="1" conaffinity="0" mesh="buddy_mushr_wheel" mass="0.498952"/>
     </default>
     <default class="buddy_steering">
       <joint type="hinge" axis="0 0 1" limited="true" frictionloss="0.01" damping="0.001" armature="0.0002" range="-0.38 0.38"/>
@@ -17,7 +17,7 @@
     </default>
   </default>
   <worldbody>
-    <body name="buddy" pos="0.0 2.0 0.0" euler="0 0 0.0">
+    <body name="buddy" pos="4.0 0.0 0.0" euler="0 0 1.57">
       <camera name="buddy_third_person" mode="fixed" pos="-1 0 1" xyaxes="0 -1 0 0.707 0 0.707"/>
       <joint type="free"/>
 

@@ -51,7 +51,7 @@ void BodyROSConnector::send_state()
     mjData* d = mjglobal::mjdata_lock();
 
     geometry_msgs::PoseStamped ros_pose;
-
+    ros_pose.header.stamp = ros::Time::now();
     ros_pose.header.frame_id = parent_body_name_;
     mushr_mujoco_util::mj2ros_body(m, d, body_name_.c_str(), ros_pose.pose);
 
